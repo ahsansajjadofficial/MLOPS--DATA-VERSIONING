@@ -12,6 +12,11 @@ new_row = {'name': 'David', 'age': 28, 'city': 'San Francisco'}
 df.loc[len(df)] = new_row
 
 
+new_row = {'name': 'AHSAN', 'age': 18, 'city': 'UK'}
+df.loc[len(df)] = new_row
+
+
+
 
 
 data_dir = 'data'
