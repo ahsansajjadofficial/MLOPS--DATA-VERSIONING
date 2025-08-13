@@ -8,6 +8,8 @@ data =  {'name': ['Alice', 'Bob', 'Charlie'],
 df = pd.DataFrame(data)
 
 
+new_row = {'name': 'David', 'age': 28, 'city': 'San Francisco'}
+df.loc[len(df)] = new_row
 
 
 
@@ -15,7 +17,7 @@ df = pd.DataFrame(data)
 data_dir = 'data'
 if not os.path.exists(data_dir):
     os.makedirs(data_dir)
-    
+
 df.to_csv(os.path.join(data_dir, 'people.csv'), index=False)
 print("Data saved to 'data/people.csv'")
 print(df)
